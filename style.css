@@ -846,3 +846,59 @@ footer a:hover {
   font-size: 1rem;
   margin-bottom: 1em;
 }
+.about-section {
+  background: #E5F3FF;
+  padding: 4em 1em;
+  color: #003355;
+}
+
+.about-content {
+  max-width: 1000px;
+  margin: auto;
+}
+
+.about-grid {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 2em;
+}
+
+.about-image {
+  flex: 1;
+  text-align: center;
+}
+
+.about-image img {
+  max-width: 250px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.about-text {
+  flex: 2;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.timeline {
+  margin-top: 1em;
+  list-style: disc;
+  padding-left: 1.2em;
+  color: #1B4965;
+}
+
+@media (max-width: 768px) {
+  .about-grid {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-text {
+    text-align: left;
+  }
+
+  .about-image img {
+    max-width: 90%;
+  }
+}
