@@ -461,3 +461,388 @@ nav ul li a.active {
   display: block;
   border-radius: 12px;
 }
+
+
+
+/* === GENERAL RESPONSIVE SETTINGS === */
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* === MOBILE NAV === */
+.navbar {
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.burger {
+  display: none;
+  cursor: pointer;
+}
+
+.burger div {
+  width: 25px;
+  height: 3px;
+  background-color: #1B4965;
+  margin: 4px;
+  transition: all 0.3s ease;
+}
+
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    gap: 1em;
+    width: 100%;
+    background-color: #E5F3FF;
+    padding: 1em;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .burger {
+    display: block;
+  }
+
+  .contact-grid,
+  .pricing-grid,
+  .portfolio-gallery {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .product-preview {
+    width: 100%;
+  }
+
+  .cta-button {
+    font-size: 1rem;
+    padding: 1em;
+  }
+
+  footer p {
+    font-size: 0.9rem;
+    text-align: center;
+    padding: 1em;
+  }
+}
+/* === PRODUCT PAGE === */
+.product-page {
+  max-width: 800px;
+  margin: 3em auto;
+  padding: 0 1em;
+}
+
+.product-page h1 {
+  font-size: 2.5rem;
+  color: #1B4965;
+  margin-bottom: 1em;
+}
+
+.product-page img {
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.product-details {
+  margin-top: 2em;
+  text-align: left;
+}
+
+.product-details h2 {
+  color: #0077B6;
+  margin-bottom: 0.5em;
+}
+
+.product-details p {
+  font-size: 1.1rem;
+  color: #003355;
+  line-height: 1.6;
+}
+
+.product-details .price {
+  font-size: 1.8rem;
+  color: #023E8A;
+  margin-top: 0.5em;
+}
+.product-details button {
+  background-color: #0077B6;
+  color: white;
+  padding: 1em 2em;
+  border: none;
+  border-radius: 30px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.product-details button:hover {
+  background-color: #023E8A;
+}
+
+/* === PRODUCT REVIEWS === */
+.product-reviews {
+  margin-top: 3em;
+}
+
+
+.product-preview {
+  max-width: 250px;
+  margin: 1.5em auto;
+  display: block;
+  border-radius: 12px;
+}
+
+@media (max-width: 480px) {
+  .product-preview {
+    max-width: 90%;
+  }
+}
+.product-reviews h2 {
+  font-size: 1.8rem;
+  color: #1B4965;
+  margin-bottom: 1em;
+}
+.product-reviews ul {
+  list-style: none;
+  padding: 0;
+}
+
+.product-reviews li {
+  background: #E5F3FF;
+  border-radius: 12px;
+  padding: 1em;
+  margin-bottom: 1em;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.product-reviews li p {
+  margin: 0.5em 0;
+}
+
+.product-reviews li .reviewer {
+  font-weight: bold;
+  color: #0077B6;
+}
+
+.product-reviews li .rating {
+  color: #FFD700; /* Gold color for stars */
+}
+
+.product-reviews li .rating span {
+  margin-right: 0.2em;
+}
+
+.product-reviews li .rating span.filled {
+  color: #FFD700; /* Gold color for filled stars */
+}
+
+.product-reviews li .rating span.empty {
+  color: #ccc; /* Light gray for empty stars */
+}
+
+.product-reviews li .review-date {
+  font-size: 0.9rem;
+  color: #5A8FBE;
+  margin-top: 0.5em;
+}
+
+.nav-logo {
+  font-weight: bold;
+  font-size: 1.5rem;
+  color: #1B4965;
+  text-decoration: none;
+}
+
+.nav-logo:hover {
+  opacity: 0.8;
+}
+
+.reviews-section {
+  background: #B3DDEF;
+  padding: 3em 1em;
+  text-align: center;
+  color: #003355;
+}
+
+.reviews-section h2 {
+  font-size: 2rem;
+  margin-bottom: 2em;
+  color: #1B4965;
+}
+
+.reviews-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2em;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.review-card {
+  background: #ffffff;
+  padding: 2em;
+  border-radius: 16px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.05);
+  text-align: left;
+}
+
+.review-text {
+  font-style: italic;
+  font-size: 1.05rem;
+  margin-bottom: 1em;
+}
+
+.review-name {
+  font-weight: bold;
+  color: #023E8A;
+}
+.review-date {
+  font-size: 0.9rem;
+  color: #5A8FBE;
+}
+
+.review-rating {
+  color: #FFD700; /* Gold color for stars */
+}
+
+.review-rating span {
+  margin-right: 0.2em;
+}
+.review-rating span.filled {
+  color: #FFD700; /* Gold color for filled stars */
+}
+
+.review-rating span.empty {
+  color: #ccc; /* Light gray for empty stars */
+}
+
+.review-card:hover {
+  transform: translateY(-5px);
+  transition: transform 0.3s ease;
+}
+
+/* === MEDIA QUERIES === */
+
+@media (max-width: 768px) {
+  .reviews-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .review-card {
+    margin: 0 auto;
+    width: 90%;
+  }
+}
+
+/* === FOOTER STYLES === */
+
+footer {
+  background-color: #1B4965;
+  color: white;
+  text-align: center;
+  padding: 2em 1em;
+  margin-top: 4em;
+}
+
+footer p {
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+footer a {
+  color: #E5F3FF;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+
+.about-section {
+  background: #E5F3FF;
+  padding: 4em 1em;
+  color: #003355;
+}
+
+.about-content {
+  max-width: 1000px;
+  margin: auto;
+}
+
+.about-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2em;
+  align-items: center;
+}
+
+.about-image {
+  flex: 1;
+  text-align: center;
+}
+
+.about-image img {
+  max-width: 300px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.about-text {
+  flex: 2;
+}
+
+.timeline {
+  margin: 1em 0 0;
+  padding-left: 1.2em;
+  list-style-type: disc;
+  color: #1B4965;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+  .about-grid {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-text {
+    text-align: left;
+  }
+}
+/* === CONTACT FORM STYLES === */
+
+.contact-form {
+  background: #ffffff;
+  padding: 2em;
+  border-radius: 16px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.05);
+}
+.contact-form label {
+  display: block;
+  margin-bottom: 0.5em;
+  color: #1B4965;
+}
+
+.contact-form input,
+
+.contact-form textarea {
+  width: 100%;
+  padding: 0.8em;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  margin-bottom: 1em;
+}
