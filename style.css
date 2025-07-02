@@ -828,7 +828,7 @@ footer a:hover {
   background: #ffffff;
   padding: 2em;
   border-radius: 16px;
-  box-shadow: 0 6px 15px rgba(0,0,0,0.05);
+  box-shadow: 0 6px 15px rgba(123, 90, 90, 0.05);
 }
 .contact-form label {
   display: block;
